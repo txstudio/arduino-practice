@@ -22,13 +22,13 @@ void loop() {
 
   if(obstacleStatus == LOW)
   {
-    Serial.println("no detected");
+    //有偵測到障礙
+    Serial.println("something in");
     digitalWrite(ledPin, HIGH);
   }
   else
   {
-    //有偵測到障礙
-    Serial.println("something in");
+    Serial.println("no detected");
     digitalWrite(ledPin, LOW);
   }
   delay(100);
